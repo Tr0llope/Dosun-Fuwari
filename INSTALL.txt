@@ -1,0 +1,13 @@
+
+---------------------Pré-requis------------:
+Pour faire fonctionner le Dosun-Fuwari Solver, vous allez avoir besoin de :
+- Python3.9 avec la bibliothèque Tkinter pour l'interface graphique
+Il peut être installé avec la commande: apt-get install python3-tkinter
+
+- Le SAT-solveur Pycosat (url: https://pypi.org/project/pycosat/)
+
+--------------------Utilisation-------------------:
+
+Pour faire fonctionner le programme , 
+il suffit  d'éditer le fichier main.py avec IDLE puis aller dans le menu Run dans la barre d'outils et cliquer sur Run module (Ctrl F5).
+Ou alors vous pouvez utiliser la commande dans votre terminal : python3 main.py

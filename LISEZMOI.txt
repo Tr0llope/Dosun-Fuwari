@@ -1,0 +1,38 @@
+
+---------------Règles du jeu----------------------:
+Le Dosun-Fuwari est une variante de puzzle de type logique. Le puzzle est
+une grille carrée ou rectangulaire subdivisée en régions d'une forme libre.
+La grille peut contenir des cases noires qui n'appartiennent à aucune
+région. L'objectif est de placer un rond noir et un rond blanc dans chaque
+région selon les règles suivantes :
+
+	Les ronds blancs (« ballons ») sont légers et flottants, de sorte qu'ils
+	doivent être placés soit dans une case supérieure de la grille ou sous
+	une case noire ou sous un autre rond blanc.
+	
+	Les ronds noirs (« boules de fer ») sont lourds et pesants, de sorte qu'ils
+	doivent être placés soit dans une case inférieure de la grille ou audessus d'une case noire ou au-dessus d'un autre rond noir.
+
+Ce programme permet de créer une grille adéquate et de la résoudre avec ces règles.
+
+-------------Fichiers du programme------------------:
+main.py: Programme principal. Exécutez ce fichier pour lancer l'interface graphique
+grid.py : contient la classe de la grille.
+formalisation.py : contient les fonctions qui génèrent la formule cnf qui est donnée au satsolver.
+
+----------------Déroulement d'une résolution------------:
+Après l'éxecution de main.py, vous allez voir la fenêtre de départ. 
+Vous pouvez y spécifier les dimensions de la grille que vous voulez initialiser 
+puis lancer la simulation en cliquant sur le bouton <<Commencer!>> ou fermer la fenêtre en cliquant sur le bouton Quit.
+
+En choisissant de cliquer sur <<Commencer!>> la fenêtre de départ se ferme et une nouvellle apparaît:
+On y retrouve au milieu,  la grille aux dimensions entrées dans la premère fenêtre et en-dessous les différentes actions possibles:
+<<Créer une subdivision>>, <<Rendre la cellule sélectionnée solide>> et <<Résoudre>>.
+Pour appliquer ces actions à la grille, il faut d'abord sélectionner les cases (les cases sélectionnées deviennent bleues) puis cliquer sur les boutons.
+Quand vous avez terminé votre configuration, vous pouvez appuyer sur Résoudre.
+Si une solution est trouvée, les balles noires et blanches correspondantes sont placées dans la grille.
+Si il n'y a pas de solution, un message l'indiquant s'affiche et la grille reste vide.
+En haut à gauche, il y a un menu où vous pouvez trouver les options suivantes:
+ Nouvelle grille, pour revenir à la fenêtre de départ et rentrer de nouvelles dimensions.
+Exporter au format DIMACS, pour récupérer sur votre ordinateur le fichier .cnf qui correspond à la résolution de la grille.
+Quitter, pour terminer la procédure en fermant les fenêtres.
